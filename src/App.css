@@ -1,38 +1,70 @@
-.App {
+.App{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input{
+  width: 250px;
+  height: 35px;
+  font-size: 20px;
+  padding: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.board{
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.todo-col{
+  background-color: beige;
+  padding: 10px 0;
+}
+.doing-col{
+  background-color: lightblue;
+  padding: 10px 0;
+}
+.done-col{
+  background-color: lightgreen;
+  padding: 10px 0;
+}
+.todo{
+  width: 33%;
+  height: 400px;
+}
+.doing{
+  width: 33%;
+  height: 400px;
+  margin: 0 10px;
+
+}
+.done{
+  width: 33%;
+  height: 400px;
 }
 
-.App-link {
-  color: #61dafb;
+.task-item{
+  width:90% ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  border: 0.7px solid lightgray;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: grab;
+  font-size: 20px;
+  margin: 10px 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-item:hover{
+  background-color: lightgrey;
+}
+.btn{
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+}
+.btn:hover{
+  background-color: purple;
+  cursor: pointer;
+  border-radius: 50%;
 }
